@@ -1,0 +1,8 @@
+using System.Numerics;
+using System;
+using System.Linq;
+
+public class Kata
+{
+  public static BigInteger[] PowersOfTwo(int n)=> Enumerable.Range(0,n+1).Select(x => new BigInteger(Math.Pow(2,x))).ToArray();
+}
